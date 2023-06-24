@@ -1,0 +1,590 @@
+/***** Start Global *****/
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --main-color: red;
+  --main-padding: 80px;
+}
+.main-padding {
+  padding-top: 80px;
+}
+.main-color {
+  color: black;
+}
+.main-border::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff !important;
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+.main-border-2::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #0078ff !important;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/***** End  Global *****/
+
+/***** Start nav-bar *****/
+header nav .navbar-brand {
+  color: #fff !important;
+}
+header nav .nav-link.active {
+  color: #fff !important;
+}
+header nav .nav-link {
+  color: #fff !important;
+  position: relative;
+}
+header nav .brdr::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background-color: #fff !important;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+header nav .brdr:hover::after {
+  width: 80%;
+}
+body:has(#home:target) .home-link::after,
+body:has(#about:target) .about-link::after,
+body:has(#services:target) .services-link::after,
+body:has(#portfolio:target) .portfolio-link::after,
+body:has(#blog:target) .blog-link::after,
+body:has(#contact:target) .contact-link::after
+{
+  width: 80%;
+}
+/***** End  nav-bar *****/
+
+/***** Start Home *****/
+section#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+section#home .home-content p::after {
+  content: "";
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes typing {
+  0% {
+    content: "  |";
+  }
+  1.25% {
+    content: " D |";
+  }
+  2.5% {
+    content: " De|";
+  }
+  3.75% {
+    content: " Des |";
+  }
+  5% {
+    content: " Desi |";
+  }
+  6.25% {
+    content: " Desig |";
+  }
+  7.5% {
+    content: " Design |";
+  }
+  8.75% {
+    content: " Designe |";
+  }
+  10% {
+    content: " Designer |";
+  }
+  11.25% {
+    content: " Designer |";
+  }
+  12.5% {
+    content: " Designe |";
+  }
+  13.75% {
+    content: " Design |";
+  }
+  15% {
+    content: " Desig |";
+  }
+  16.25% {
+    content: " Desi |";
+  }
+  17.5% {
+    content: " Des |";
+  }
+  18.75% {
+    content: " De |";
+  }
+  20% {
+    content: " D |";
+  }
+  21.11% {
+    content: "  |";
+  }
+  22.22% {
+    content: " D |";
+  }
+  23.33% {
+    content: " De |";
+  }
+  24.44% {
+    content: " Dev |";
+  }
+  25.55% {
+    content: " Deve |";
+  }
+  26.66% {
+    content: " Devel |";
+  }
+  27.77% {
+    content: " Develo |";
+  }
+  28.88% {
+    content: " Develop |";
+  }
+  29.99% {
+    content: " Develope |";
+  }
+  31.1% {
+    content: " Developer |";
+  }
+  32.21% {
+    content: " Developer |";
+  }
+  33.32% {
+    content: " Develope |";
+  }
+  34.43% {
+    content: " Develop |";
+  }
+  35.54% {
+    content: " Develo |";
+  }
+  36.65% {
+    content: " Devel |";
+  }
+  37.76% {
+    content: " Deve |";
+  }
+  38.87% {
+    content: " Dev |";
+  }
+  39.98% {
+    content: " De |";
+  }
+  40% {
+    content: " D |";
+  }
+  41% {
+    content: "  |";
+  }
+  42% {
+    content: " F |";
+  }
+  43% {
+    content: " Fr |";
+  }
+  44% {
+    content: " Fre |";
+  }
+  45% {
+    content: " Free |";
+  }
+  46% {
+    content: " Freel |";
+  }
+  47% {
+    content: " Freela |";
+  }
+  48% {
+    content: " Freelan |";
+  }
+  49% {
+    content: " Freelanc |";
+  }
+  50% {
+    content: " Freelance |";
+  }
+  51% {
+    content: " Freelancer |";
+  }
+  52% {
+    content: " Freelancer |";
+  }
+  53% {
+    content: " Freelance |";
+  }
+  54% {
+    content: " Freelanc |";
+  }
+  55% {
+    content: " Freelan |";
+  }
+  56% {
+    content: " Freela |";
+  }
+  57% {
+    content: " Freel |";
+  }
+  58% {
+    content: " Free |";
+  }
+  59% {
+    content: " Fre |";
+  }
+  60% {
+    content: " Fr |";
+  }
+  61% {
+    content: " F |";
+  }
+  62% {
+    content: "  |";
+  }
+  63% {
+    content: " P |";
+  }
+  64.5% {
+    content: " Ph |";
+  }
+  66% {
+    content: " Pho |";
+  }
+  67.5% {
+    content: " Phot |";
+  }
+  68% {
+    content: " Photo |";
+  }
+  69.5% {
+    content: " Photog |";
+  }
+  71% {
+    content: " Photogr |";
+  }
+  72.5% {
+    content: " Photogra |";
+  }
+  74% {
+    content: " Photograp |";
+  }
+  75.5% {
+    content: " Photograph |";
+  }
+  77% {
+    content: " Photographe |";
+  }
+  78.5% {
+    content: " Photographer |";
+  }
+  80% {
+    content: " Photographer |";
+  }
+  81.5% {
+    content: " Photographe |";
+  }
+  83% {
+    content: " Photograph |";
+  }
+  84.5% {
+    content: " Photograp |";
+  }
+  86% {
+    content: " Photogra |";
+  }
+  87.5% {
+    content: " Photogr |";
+  }
+  89% {
+    content: " Photog |";
+  }
+  90.5% {
+    content: " Photo |";
+  }
+  92% {
+    content: " Phot |";
+  }
+  93.5% {
+    content: " Pho |";
+  }
+  97% {
+    content: " Ph |";
+  }
+  99% {
+    content: " P |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+.arrow {
+  content: "";
+  background-color: #0062d3;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  transform: translate(-20%, -20%);
+  transition: 0.3s ease-in-out;
+  z-index: 222;
+}
+.arrow:hover {
+  background-color: #1c7af6a8;
+}
+.arrow a {
+  color: #fff;
+}
+
+/***** End Home *****/
+
+/***** Start About *****/
+
+section#about {
+  background-color: rgb(245, 245, 245);
+
+}
+section#about .container {
+  background-color: white;
+  padding-block: 60px;
+}
+/***** End  About *****/
+
+/***** Start Services *****/
+
+section#services {
+  background-color: rgb(245, 245, 245);
+}
+
+section#services .items {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+section#services .items .icon-circle {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  border: 10px solid #0078ff;
+  transition: 0.3s ease-in-out;
+}
+section#services .items:hover .icon-circle {
+  border: 10px solid #e5effca8;
+  background-color: #0078ff;
+  color: white;
+}
+/***** End  Services *****/
+
+/***** Start counter *****/
+section#counter {
+  background-image: linear-gradient(#0077ff8f, #0077ff80),
+    url(../images/counters-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 80px;
+  /* z-index: 222; */
+}
+section#counter .data-counter {
+  text-align: center;
+  color: white;
+}
+
+section#counter .data-counter .icon-counter {
+  width: 70px;
+  height: 70px;
+  background-color: #0078ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  border: 10px solid white;
+}
+/***** End  counter *****/
+
+/***** Start Portfolio *****/
+
+section#portfolio {
+  background-color: rgb(245, 245, 245);
+}
+
+section#portfolio .box .card-body .card-span {
+  color: #0078ff;
+}
+section#portfolio .box .card-icon .icons-1 {
+  color: #0078ff;
+  padding-inline: 10px;
+}
+section#portfolio .card {
+  overflow: hidden;
+}
+section#portfolio .card img {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+section#portfolio .card .card-image:hover img {
+  transform: scale(1.1);
+}
+
+/***** End  Portfolio *****/
+
+/***** Start slider *****/
+section#slider {
+  background-image: linear-gradient(#0077ff8f, #0077ff80),
+    url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+section#slider .carousel-item .carousel-caption {
+  color: #0078ff;
+}
+.client-image {
+  width: 150px;
+  border-radius: 50%;
+}
+.client-feedback {
+  color: white;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+/***** End  slider *****/
+
+/***** Start Blog *****/
+section#blog .card {
+  cursor: pointer;
+}
+section#blog .card h5 {
+  position: relative;
+}
+section#blog .card .card-body h5::after {
+  content: "Travel";
+  background-color: #0078ff;
+  width: 75px;
+  height: 25px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: medium;
+}
+section#blog .card .card-footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section#blog .card .card-footer a {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+section#blog .card .card-footer a:hover {
+  color: #0078ff;
+}
+section#blog .card .card-body a {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+section#blog .card .card-body a:hover {
+  color: #0078ff;
+}
+
+/***** End  Blog *****/
+
+/***** Start contact *****/
+
+section#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(#0077ff8f, #0077ff80),
+    url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+section#contact .get-in-touch .icon-contact {
+  color: #0078ff;
+}
+section#contact .contact-details .social .icon-social {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 4px solid #0078ff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-inline: 10px;
+}
+section#contact .contact-details .social .icon-social:hover {
+  border: 4px solid #e5effca8;
+  background-color: #0078ff;
+  color: white;
+}
+/***** End  contact *****/
+
+/***** Start Footer *****/
+footer {
+  min-height: 20vh;
+  background-color: #0062d3;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+/***** End Footer *****/
+
+
+@media (max-width: 991.98px) {
+body:has(#home:target) .home-link::after,
+body:has(#about:target) .about-link::after,
+body:has(#services:target) .services-link::after,
+body:has(#portfolio:target) .portfolio-link::after,
+body:has(#blog:target) .blog-link::after,
+body:has(#contact:target) .contact-link::after
+{
+  width: 20%;
+}
+}
